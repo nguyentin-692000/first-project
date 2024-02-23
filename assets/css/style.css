@@ -10,4 +10,91 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========== commom ===================== */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  width: 144px;
+  height: 50px;
+  border-radius: 24.5px;
+  background-color: #171100;
+  padding: 8px 16px;
+}
+
+/* ============== header ===============*/
+
+header {
+  background-color: #fffcf4;
+  padding: 32px 0 12px;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -12px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.header nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  padding: 8px 21px;
+  color: #5f5b53;
+}
+
+nav ul li a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+nav ul li.active {
+  position: relative;
+  color: #171100;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+nav ul li.active a:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: currentColor;
+  left: 21px;
+}
+
+.action {
+  margin-left: 22px;
+}
+
+.action a {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+.action a:hover {
+  background-color: #ffb900;
 }
